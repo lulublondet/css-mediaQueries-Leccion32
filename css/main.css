@@ -1,0 +1,90 @@
+@import url("common.css");
+
+
+* {
+  	box-sizing: border-box;
+  	margin:0;
+  	padding: 0;
+  	color:rgb(255,255,255);
+  	font-family: 'Montserrat', sans-serif;
+  	/*font-size: 10px;*/
+ }
+
+body {
+		width: 100%;
+  		background-image: url("../assets/images/Landscape.jpg");
+  		background-repeat: no-repeat;
+		position: fixed;
+  		z-index: 1;
+  		height: 100vh;
+  
+  		
+  	}
+
+
+img {
+	display: none;
+  position: relative;
+  bottom: -60%;
+  left: 25%;
+
+}
+
+img.img-large {
+	display: block;	
+}
+
+
+
+
+
+/*Small Grid */
+@media (max-width: 600px){
+  
+  body {
+		  background-image: url("../assets/images/maxresdefault.jpg");
+  		background-repeat: repeat-x;
+  	}
+  
+  
+  img.img-small {
+	 display: block;
+  }
+
+  
+  img.img-medium,
+  img.img-large {
+	display: none;
+}
+
+
+	}
+
+
+/*Medium Grid */
+@media(min-width:600px) and (max-width: 900px){
+
+body {
+      background-image: url("../assets/images/dawn.png");
+  		background-repeat: no-repeat;	
+		  position: fixed;
+  		z-index: 1;
+    }
+
+img.img-medium {
+	 display: block;
+  }
+
+
+img.img-small,
+img.img-large {
+	display: none;
+}
+
+
+}
+
+
+
+
+
