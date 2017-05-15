@@ -5,33 +5,29 @@
   	box-sizing: border-box;
   	margin:0;
   	padding: 0;
-  	color:rgb(255,255,255);
-  	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   	/*font-size: 10px;*/
  }
 
 body {
-		width: 100%;
+		
   		background-image: url("../assets/images/Landscape.jpg");
   		background-repeat: no-repeat;
-		position: fixed;
-  		z-index: 1;
-  		height: 100vh;
-  
-  		
-  	}
+      background-position: center top;
+      background-size: cover;
+      height: 100vh;
+		}
 
 
 img {
-	display: none;
-  position: relative;
-  bottom: -60%;
-  left: 25%;
-
+  display: none;
 }
 
 img.img-large {
 	display: block;	
+  position: relative;
+  left: 20%;
+  bottom:-300px;
 }
 
 
@@ -42,20 +38,28 @@ img.img-large {
 @media (max-width: 600px){
   
   body {
-		  background-image: url("../assets/images/maxresdefault.jpg");
-  		background-repeat: repeat-x;
-  	}
+		    background-image: url("../assets/images/maxresdefault.jpg");
+        background-position:center top;     
+        background-size: cover;
+        height: 100vh;
+  	 }
   
   
   img.img-small {
-	 display: block;
+  margin:0;
+  padding: 0;
+	display: block;
+  position: relative;
+  left:20%;
+  top:50%;
+
   }
 
   
   img.img-medium,
   img.img-large {
-	display: none;
-}
+	 display: none;
+  }
 
 
 	}
@@ -65,21 +69,26 @@ img.img-large {
 @media(min-width:600px) and (max-width: 900px){
 
 body {
-      background-image: url("../assets/images/dawn.png");
-  		background-repeat: no-repeat;	
-		  position: fixed;
-  		z-index: 1;
+      
+        background-image: url("../assets/images/dawn.png");
+        background-position: center center;
+        height: 100vh;
+        background-size: cover;
     }
 
+
 img.img-medium {
-	 display: block;
+	   display: block;
+     position: relative;
+     left: 25%;
+     bottom:-50%;
   }
 
 
-img.img-small,
-img.img-large {
-	display: none;
-}
+  img.img-small,
+  img.img-large {
+	 display: none;
+  }
 
 
 }
